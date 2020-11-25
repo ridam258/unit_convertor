@@ -1,14 +1,14 @@
 var drpdwn1value=document.querySelector("#dropDown1");
 var drpdwn2value=document.querySelector("#dropDown2");
-var input1value=document.querySelector("#first_input");
-var input2value=document.querySelector("#second_input");
+var lengthinput1value=document.querySelector("#first_input");
+var lengthinput2value=document.querySelector("#second_input");
 var frstActive=true;
 
-input1value.addEventListener("input",function(){
+lengthinput1value.addEventListener("input",function(){
     frstActive=true;
     convert1();
 });
-input2value.addEventListener("input",function(){
+lengthinput2value.addEventListener("input",function(){
     frstActive=false;
     convert1();
 });
@@ -30,33 +30,33 @@ function convert1(){
             switch(drpdwn2value.value){
                 
                 case "metre":
-                    if(frstActive)input2value.value=input1value.value;
-                    else input1value.value=input2value.value;
+                    if(frstActive)lengthinput2value.value=lengthinput1value.value;
+                    else lengthinput1value.value=currencyinput2value.value;
 
                     break;
                 case "centimetre":
-                    if(frstActive)input2value.value=input1value.value*100;
-                    else input1value.value=input2value.value/100;
+                    if(frstActive)lengthinput2value.value=lengthinput1value.value*100;
+                    else lengthinput1value.value=lengthinput2value.value/100;
                     break;
                 case "kilometre":
-                    if(frstActive)input2value.value=input1value.value/1000;
-                    else input1value.value=input2value.value*1000;
+                    if(frstActive)lengthinput2value.value=lengthinput1value.value/1000;
+                    else lengthinput1value.value=lengthinput2value.value*1000;
                     break;
                 case "decimetre":
-                    if(frstActive)input2value.value=input1value.value*10;
-                    else input1value.value=input2value.value/10;
+                    if(frstActive)lengthinput2value.value=lengthinput1value.value*10;
+                    else lengthinput1value.value=lengthinput2value.value/10;
                     break;
                 case "milimetre":
-                    if(frstActive)input2value.value=input1value.value*1000;
-                    else input1value.value=input2value.value/1000;
+                    if(frstActive)lengthinput2value.value=lengthinput1value.value*1000;
+                    else lengthinput1value.value=lengthinput2value.value/1000;
                     break;
                 case "micrometre":
-                    if(frstActive)input2value.value=input1value.value*1000000;
-                    else input1value.value=input2value.value/1000000;
+                    if(frstActive)lengthinput2value.value=lengthinput1value.value*1000000;
+                    else lengthinput1value.value=lengthinput2value.value/1000000;
                     break;
                 case "nanometre":
-                    if(frstActive)input2value.value=input1value.value*1000000000;
-                    else input1value.value=input2value.value/1000000000;
+                    if(frstActive)lengthinput2value.value=lengthinput1value.value*1000000000;
+                    else lengthinput1value.value=lengthinput2value.value/1000000000;
                     break;    
             }
             break;
@@ -66,32 +66,32 @@ function convert1(){
                 switch(drpdwn2value.value){
                 
                     case "metre":
-                        if(frstActive)input2value.value=input1value.value/100;
-                        else input1value.value=input2value.value*100;
+                        if(frstActive)lengthinput2value.value=lengthinput1value.value/100;
+                        else lengthinput1value.value=lengthinput2value.value*100;
                         break;
                     case "centimetre":
-                        if(frstActive)input2value.value=input1value.value;
-                        else input1value.value=input2value.value;
+                        if(frstActive)lengthinput2value.value=lengthinput1value.value;
+                        else lengthinput1value.value=lengthinput2value.value;
                         break;
                     case "kilometre":
-                        if(frstActive)input2value.value=input1value.value/100000;
-                        else input1value.value=input2value.value*100000;
+                        if(frstActive)lengthinput2value.value=lengthinput1value.value/100000;
+                        else lengthinput1value.value=lengthinput2value.value*100000;
                         break;
                     case "decimetre":
-                        if(frstActive)input2value.value=input1value.value/10;
-                        else input1value.value=input2value.value*10;
+                        if(frstActive)lengthinput2value.value=lengthinput1value.value/10;
+                        else lengthinput1value.value=lengthinput2value.value*10;
                         break;
                     case "milimetre":
-                        if(frstActive)input2value.value=input1value.value*10;
-                        else input1value.value=input2value.value/10;
+                        if(frstActive)lengthinput2value.value=lengthinput1value.value*10;
+                        else lengthinput1value.value=lengthinput2value.value/10;
                         break;
                     case "micrometre":
-                        if(frstActive)input2value.value=input1value.value*10000;
-                        else input1value.value=input2value.value/10000;
+                        if(frstActive)lengthinput2value.value=lengthinput1value.value*10000;
+                        else lengthinput1value.value=lengthinput2value.value/10000;
                         break;
                     case "nanometre":
-                        if(frstActive)input2value.value=input1value.value*10000000;
-                        else input1value.value=input2value.value/10000000;
+                        if(frstActive)lengthinput2value.value=lengthinput1value.value*10000000;
+                        else lengthinput1value.value=lengthinput2value.value/10000000;
                         break;    
                 }
                 break;
@@ -101,32 +101,32 @@ function convert1(){
                     switch(drpdwn2value.value){
                 
                         case "metre":
-                            if(frstActive)input2value.value=input1value.value*1000;
-                            else input1value.value=input2value.value/1000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*1000;
+                            else lengthinput1value.value=lengthinput2value.value/1000;
                             break;
                         case "centimetre":
-                            if(frstActive)input2value.value=input1value.value*100000;
-                            else input1value.value=input2value.value/100000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*100000;
+                            else lengthinput1value.value=lengthinput2value.value/100000;
                             break;
                         case "kilometre":
-                            if(frstActive)input2value.value=input1value.value;
-                            else input1value.value=input2value.value;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value;
+                            else lengthinput1value.value=lengthinput2value.value;
                             break;
                         case "decimetre":
-                            if(frstActive)input2value.value=input1value.value*10000;
-                            else input1value.value=input2value.value/10000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*10000;
+                            else lengthinput1value.value=lengthinput2value.value/10000;
                             break;
                         case "milimetre":
-                            if(frstActive)input2value.value=input1value.value*1000000;
-                            else input1value.value=input2value.value/1000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*1000000;
+                            else lengthinput1value.value=lengthinput2value.value/1000000;
                             break;
                         case "micrometre":
-                            if(frstActive)input2value.value=input1value.value*1000000000;
-                            else input1value.value=input2value.value/1000000000;
+                            if(frstActive)lengthinput2value.valulengthinput1value.value*1000000000;
+                            else lengthinput1value.value=lengthinput2value.value/1000000000;
                             break;
                         case "nanometre":
-                            if(frstActive)input2value.value=input1value.value*1000000000000;
-                            input1value.value=input2value.value/1000000000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*1000000000000;
+                            else lengthinput1value.value=lengthinput2value.value/1000000000000;
                             break;    
                     }
                     break;
@@ -136,32 +136,32 @@ function convert1(){
                     switch(drpdwn2value.value){
                 
                         case "metre":
-                            if(frstActive)input2value.value=input1value.value/10;
-                            else input1value.value=input2value.value*10;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/10;
+                            else lengthinput1value.value=lengthinput2value.value*10;
                             break;
                         case "centimetre":
-                            if(frstActive)input2value.value=input1value.value*10;
-                            else input1value.value=input2value.value/10;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*10;
+                            else lengthinput1value.value=lengthinput2value.value/10;
                             break;
                         case "kilometre":
-                            if(frstActive)input2value.value=input1value.value/10000;
-                            else input1value.value=input2value.value*10000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/10000;
+                            else lengthinput1value.value=lengthinput2value.value*10000;
                             break;
                         case "decimetre":
-                            if(frstActive)input2value.value=input1value.value;
-                            else input1value.value=input2value.value;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value;
+                            else lengthinput1value.value=lengthinput2value.value;
                             break;
                         case "milimetre":
-                            if(frstActive)input2value.value=input1value.value*100;
-                            else input1value.value=input2value.value/100;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*100;
+                            else lengthinput1value.value=lengthinput2value.value/100;
                             break;
                         case "micrometre":
-                            if(frstActive)input2value.value=input1value.value*100000;
-                            else input1value.value=input2value.value/100000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*100000;
+                            else lengthinput1value.value=lengthinput2value.value/100000;
                             break;
                         case "nanometre":
-                            if(frstActive)input2value.value=input1value.value*100000000;
-                            else input1value.value=input2value.value/100000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*100000000;
+                            else lengthinput1value.value=lengthinput2value.value/100000000;
                             break;    
                     }
                     break;
@@ -171,33 +171,33 @@ function convert1(){
                     switch(drpdwn2value.value){
                 
                         case "metre":
-                            if(frstActive)input2value.value=input1value.value/1000;
-                            else input1value.value=input2value.value*1000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/1000;
+                            else currencyinput1value.value=currencyinput2value.value*1000;
                             break;
                         case "centimetre":
-                            if(frstActive)input2value.value=input1value.value/10;
-                            else input1value.value=input2value.value*10;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/10;
+                            else lengthinput1value.value=lengthinput2value.value*10;
                             break;
                         case "kilometre":
-                            if(frstActive)input2value.value=input1value.value/1000000;
-                            else input1value.value=input2value.value*1000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/1000000;
+                            else lengthinput1value.value=lengthinput2value.value*1000000;
                             break;
                         case "decimetre":
-                            if(frstActive)input2value.value=input1value.value/100;
-                            else input1value.value=input2value.value*100;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/100;
+                            else lengthinput1value.value=lengthinput2value.value*100;
                             break;
                         case "milimetre":
-                            if(frstActive)input2value.value=input1value.value;
-                            else input1value.value=input2value.value;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value;
+                            else lengthinput1value.value=lengthinput2value.value;
                             break;
                         case "micrometre":
-                            if(frstActive)input2value.value=input1value.value*1000;
-                            else input1value.value=input2value.value/1000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*1000;
+                            else lengthinput1value.value=lengthinput2value.value/1000;
                             break;
                         case "nanometre":
                             
-                        if(frstActive)input2value.value=input1value.value*1000000;
-                            else input1value.value=input2value.value/1000000;
+                        if(frstActive)lengthinput2value.value=lengthinput1value.value*1000000;
+                            else lengthinput1value.value=lengthinput2value.value/1000000;
                             break;    
                     }
                     break;
@@ -207,32 +207,32 @@ function convert1(){
                     switch(drpdwn2value.value){
                 
                         case "metre":
-                            if(frstActive)input2value.value=input1value.value/1000000;
-                            else input1value.value=input2value.value*1000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/1000000;
+                            else lengthinput1value.value=lengthinput2value.value*1000000;
                             break;
                         case "centimetre":
-                            if(frstActive)input2value.value=input1value.value/10000;
-                            else input1value.value=input2value.value*10000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/10000;
+                            else lengthinput1value.value=lengthinput2value.value*10000;
                             break;
                         case "kilometre":
-                            if(frstActive)input2value.value=input1value.value/1000000000;
-                            else input1value.value=input2value.value*1000000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/1000000000;
+                            else lengthinput1value.value=lengthinput2value.value*1000000000;
                             break;
                         case "decimetre":
-                            if(frstActive)input2value.value=input1value.value/100000;
-                            else input1value.value=input2value.value*100000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/100000;
+                            else lengthinput1value.value=lengthinput2value.value*100000;
                             break;
                         case "milimetre":
-                            if(frstActive)input2value.value=input1value.value/1000;
-                            else input1value.value=input2value.value*1000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/1000;
+                            else lengthinput1value.value=lengthinput2value.value*1000;
                             break;
                         case "micrometre":
-                            if(frstActive)input2value.value=input1value.value;
-                            input1value.value=input2value.value;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value;
+                            else lengthinput1value.value=lengthinput2value.value;
                             break;
                         case "nanometre":
-                            if(frstActive)input2value.value=input1value.value*1000;
-                            input1value.value=input2value.value/1000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value*1000;
+                            else lengthinput1value.value=lengthinput2value.value/1000;
                             break;    
                     }
                     break;
@@ -242,32 +242,32 @@ function convert1(){
                     switch(drpdwn2value.value){
                 
                         case "metre":
-                            if(frstActive)input2value.value=input1value.value/1000000000;
-                            else input1value.value=input2value.value*1000000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/1000000000;
+                            else lengthinput1value.value=lengthinput2value.value*1000000000;
                             break;
                         case "centimetre":
-                            if(frstActive)input2value.value=input1value.value/10000000;
-                            else input1value.value=input2value.value*10000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/10000000;
+                            else lengthinput1value.value=lengthinput2value.value*10000000;
                             break;
                         case "kilometre":
-                            if(frstActive)input2value.value=input1value.value/1000000000000;
-                            else input1value.value=input2value.value*1000000000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/1000000000000;
+                            else lengthinput1value.value=lengthinput2value.value*1000000000000;
                             break;
                         case "decimetre":
-                            if(frstActive)input2value.value=input1value.value/100000000;
-                            else input1value.value=input2value.value*100000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/100000000;
+                            else lengthinput1value.value=lengthinput2value.value*100000000;
                             break;
                         case "milimetre":
-                            if(frstActive)input2value.value=input1value.value/1000000;
-                            else input1value.value=input2value.value*1000000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/1000000;
+                            else lengthinput1value.value=lengthinput2value.value*1000000;
                             break;
                         case "micrometre":
-                            if(frstActive)input2value.value=input1value.value/1000;
-                            else input1value.value=input2value.value*1000;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value/1000;
+                            else lengthinput1value.value=lengthinput2value.value*1000;
                             break;
                         case "nanometre":
-                            if(frstActive)input2value.value=input1value.value;
-                            input1value.value=input2value.value;
+                            if(frstActive)lengthinput2value.value=lengthinput1value.value;
+                            else lengthinput1value.value=lengthinput2value.value;
                             break;    
                     }
                     break;
