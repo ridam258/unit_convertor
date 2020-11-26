@@ -45,3 +45,10 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
+#main {
+  display: flex;
+  flex-wrap: wrap;
+}
+h1 {
+  text-align: center;
+}
